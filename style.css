@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+table {
+    display: block;
+    border-collapse: collapse;
+}
+
+#botTable {
+    display: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+th {
+    background-color: greenyellow;
+}
+
+td {
+    cursor: pointer;
+}
+
+.shipPick {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipBox {
+    display: flex;
+}
+
+.pickedShipBox {
+    display: flex;
+    height: 244px;
+    width: 244px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pickedShipBox * {
+    cursor: auto;
+}
+
+.ship-2, .ship-3, .ship-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    background-color: #3498db;
+    border: 2px solid black;
+    margin: 40px;
+}
+
+.ship-2 {
+    width: 80px;
+}
+
+.ship-3 {
+    width: 120px;
+}
+
+.ship-4 {
+    width: 160px;
+}
+
+.ship-1v, .ship-2v, .ship-3v, .ship-4v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    background-color: #3498db;
+    border: 2px solid black;
+    margin: 40px;
+}
+
+.ship-1v {
+    height: 40px;
+}
+
+.ship-2v {
+    height: 80px;
+}
+
+.ship-3v {
+    height: 120px;
+}
+
+.ship-4v {
+    height: 160px;
+}
+
+.ship {
+    background-color: rgb(26, 183, 235);
+}
+
+#botTable .ship {
+    background-color: white;
+}
+
+.button {
+  position: absolute;
+  width: 200px; 
+  height: 100px;
+  background-color: #f0f0f0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#randomButton {
+    left: 30%;
+}
+
+#clearButton {
+    left: 10%;
+}
+
+.blank {
+    background-color: gray;
+}
+
+.shooted {
+    background-color: red;
+}
+
+#botTable .shooted {
+    background-color: red;
+}
+
+#botTable .revealed {
+    background-color: purple;
+}
+
+.winMessage {
+    display: none;
+    position: absolute;
+    bottom: 8%;
+    font-size: 40px;
+}
